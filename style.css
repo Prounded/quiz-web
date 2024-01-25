@@ -1,0 +1,115 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Triangles.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin: 0px;    
+    color: rgb(188, 188, 188);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(Poppins-Regular.ttf);
+}
+
+input[type=radio]{
+    transform: scale(1.5, 1.5);
+    accent-color: rgb(195, 0, 255);
+}
+
+.questions{
+    text-align: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Poppins-Regular;
+    height: 100px;
+}
+
+
+.choicesContainer{
+    margin-top: 7vh;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 7vw;
+    font-size: 22px;
+}
+
+.choices{
+    margin-top: 7vh;
+}
+
+.displayAlph{
+    font-size: 23px;
+}
+
+.submitBtn{
+    margin-top: 8vh;
+    height: 50px;
+    width: 130px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    font-size: 20px;
+}
+
+.submitBtn:hover{
+    background-color: rgb(255, 255, 255);
+    animation: shaking 0.1s 2 linear normal;
+}
+
+#questionNumbers{
+    float: left;
+    width: 42px;
+    height: 42px;
+    border-radius: 25px;
+    border: 2px solid;
+    font-size: 35px;
+    margin-top: 5vh;
+    background-color: transparent;
+    margin-left: 3vh;
+    color: rgb(188, 188, 188);
+    overflow: auto;
+}
+
+#textScore{
+    font-size: 50px;
+}
+
+#percentCorrect{
+    margin-top: 15px;
+    font-size: 55px;
+}
+
+#fractionNum{
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+#rating{
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#infoError{
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: red;
+    height: 10px;
+    visibility: hidden;
+}
+
+@keyframes shaking{
+    33%{transform: rotateZ(5deg);}
+    66%{transform: rotateZ(-5deg);}
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainQuestion">
+        <div id="questionNumbers"></div>
+        <div class="questions" id="questions"></div>
+
+        <div class="choicesContainer" id="choicesContainer">
+            <input type="radio" name="answer" id="choiceA" class="choices">
+            <label for="choiceA" class="displayAlph" id="displayA">A. </label>
+            <label for="choiceA" class="choices" id="answerA"></label><br>
+    
+            <input type="radio" name="answer" id="choiceB" class="choices">
+            <label for="choiceB" class="displayAlph" id="displayB">B. </label>
+            <label for="choiceB" class="choices" id="answerB"></label><br>
+    
+            <input type="radio" name="answer" id="choiceC" class="choices">
+            <label for="choiceC" class="displayAlph" id="displayC">C. </label>
+            <label for="choiceC" class="choices" id="answerC"></label><br>
+    
+            <input type="radio" name="answer" id="choiceD" class="choices">
+            <label for="choiceD" class="displayAlph" id="displayD">D. </label>
+            <label for="choiceD" class="choices" id="answerD"></label><br>
+
+            <div id="infoError">*Please Choose Your Answer!</div>
+
+        </div>
+        <button class="submitBtn" id="submit" onclick="isCorrect()">Submit</button>
+    </div>
+
+    <div id="displayScores">
+        <div id="textScore">Your Score : </div>
+        <div id="percentCorrect"></div>
+        <div id="fractionNum"></div>
+        <div id="rating"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
